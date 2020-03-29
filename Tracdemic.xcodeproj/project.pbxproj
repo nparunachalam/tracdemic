@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76988D24315A2F00EDA974 /* AppDelegate.m */; };
+		EC76989124315A2F00EDA974 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76989024315A2F00EDA974 /* SceneDelegate.m */; };
+		EC76989424315A2F00EDA974 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76989324315A2F00EDA974 /* ViewController.m */; };
+		EC76989724315A2F00EDA974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989524315A2F00EDA974 /* Main.storyboard */; };
+		EC76989924315A3100EDA974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC76989824315A3100EDA974 /* Assets.xcassets */; };
+		EC76989C24315A3100EDA974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989A24315A3100EDA974 /* LaunchScreen.storyboard */; };
+		EC76989F24315A3100EDA974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76989E24315A3100EDA974 /* main.m */; };
+		EC7698A924315A3100EDA974 /* TracdemicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698A824315A3100EDA974 /* TracdemicTests.m */; };
+		EC7698B424315A3100EDA974 /* TracdemicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698B324315A3100EDA974 /* TracdemicUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC7698A524315A3100EDA974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC76988124315A2F00EDA974 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC76988824315A2F00EDA974;
+			remoteInfo = Tracdemic;
+		};
+		EC7698B024315A3100EDA974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC76988124315A2F00EDA974 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC76988824315A2F00EDA974;
+			remoteInfo = Tracdemic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC76988924315A2F00EDA974 /* Tracdemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracdemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC76988C24315A2F00EDA974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC76988D24315A2F00EDA974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC76988F24315A2F00EDA974 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EC76989024315A2F00EDA974 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EC76989224315A2F00EDA974 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC76989324315A2F00EDA974 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC76989624315A2F00EDA974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC76989824315A3100EDA974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC76989B24315A3100EDA974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC76989D24315A3100EDA974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC76989E24315A3100EDA974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC7698A424315A3100EDA974 /* TracdemicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TracdemicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7698A824315A3100EDA974 /* TracdemicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TracdemicTests.m; sourceTree = "<group>"; };
+		EC7698AA24315A3100EDA974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7698AF24315A3100EDA974 /* TracdemicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TracdemicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7698B324315A3100EDA974 /* TracdemicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TracdemicUITests.m; sourceTree = "<group>"; };
+		EC7698B524315A3100EDA974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC76988624315A2F00EDA974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7698A124315A3100EDA974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7698AC24315A3100EDA974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC76988024315A2F00EDA974 = {
+			isa = PBXGroup;
+			children = (
+				EC76988B24315A2F00EDA974 /* Tracdemic */,
+				EC7698A724315A3100EDA974 /* TracdemicTests */,
+				EC7698B224315A3100EDA974 /* TracdemicUITests */,
+				EC76988A24315A2F00EDA974 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC76988A24315A2F00EDA974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC76988924315A2F00EDA974 /* Tracdemic.app */,
+				EC7698A424315A3100EDA974 /* TracdemicTests.xctest */,
+				EC7698AF24315A3100EDA974 /* TracdemicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC76988B24315A2F00EDA974 /* Tracdemic */ = {
+			isa = PBXGroup;
+			children = (
+				EC76988C24315A2F00EDA974 /* AppDelegate.h */,
+				EC76988D24315A2F00EDA974 /* AppDelegate.m */,
+				EC76988F24315A2F00EDA974 /* SceneDelegate.h */,
+				EC76989024315A2F00EDA974 /* SceneDelegate.m */,
+				EC76989224315A2F00EDA974 /* ViewController.h */,
+				EC76989324315A2F00EDA974 /* ViewController.m */,
+				EC76989524315A2F00EDA974 /* Main.storyboard */,
+				EC76989824315A3100EDA974 /* Assets.xcassets */,
+				EC76989A24315A3100EDA974 /* LaunchScreen.storyboard */,
+				EC76989D24315A3100EDA974 /* Info.plist */,
+				EC76989E24315A3100EDA974 /* main.m */,
+			);
+			path = Tracdemic;
+			sourceTree = "<group>";
+		};
+		EC7698A724315A3100EDA974 /* TracdemicTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7698A824315A3100EDA974 /* TracdemicTests.m */,
+				EC7698AA24315A3100EDA974 /* Info.plist */,
+			);
+			path = TracdemicTests;
+			sourceTree = "<group>";
+		};
+		EC7698B224315A3100EDA974 /* TracdemicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7698B324315A3100EDA974 /* TracdemicUITests.m */,
+				EC7698B524315A3100EDA974 /* Info.plist */,
+			);
+			path = TracdemicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC76988824315A2F00EDA974 /* Tracdemic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7698B824315A3100EDA974 /* Build configuration list for PBXNativeTarget "Tracdemic" */;
+			buildPhases = (
+				EC76988524315A2F00EDA974 /* Sources */,
+				EC76988624315A2F00EDA974 /* Frameworks */,
+				EC76988724315A2F00EDA974 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tracdemic;
+			productName = Tracdemic;
+			productReference = EC76988924315A2F00EDA974 /* Tracdemic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC7698A324315A3100EDA974 /* TracdemicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7698BB24315A3100EDA974 /* Build configuration list for PBXNativeTarget "TracdemicTests" */;
+			buildPhases = (
+				EC7698A024315A3100EDA974 /* Sources */,
+				EC7698A124315A3100EDA974 /* Frameworks */,
+				EC7698A224315A3100EDA974 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7698A624315A3100EDA974 /* PBXTargetDependency */,
+			);
+			name = TracdemicTests;
+			productName = TracdemicTests;
+			productReference = EC7698A424315A3100EDA974 /* TracdemicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC7698AE24315A3100EDA974 /* TracdemicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7698BE24315A3100EDA974 /* Build configuration list for PBXNativeTarget "TracdemicUITests" */;
+			buildPhases = (
+				EC7698AB24315A3100EDA974 /* Sources */,
+				EC7698AC24315A3100EDA974 /* Frameworks */,
+				EC7698AD24315A3100EDA974 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7698B124315A3100EDA974 /* PBXTargetDependency */,
+			);
+			name = TracdemicUITests;
+			productName = TracdemicUITests;
+			productReference = EC7698AF24315A3100EDA974 /* TracdemicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC76988124315A2F00EDA974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Oruvan;
+				TargetAttributes = {
+					EC76988824315A2F00EDA974 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					EC7698A324315A3100EDA974 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = EC76988824315A2F00EDA974;
+					};
+					EC7698AE24315A3100EDA974 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = EC76988824315A2F00EDA974;
+					};
+				};
+			};
+			buildConfigurationList = EC76988424315A2F00EDA974 /* Build configuration list for PBXProject "Tracdemic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC76988024315A2F00EDA974;
+			productRefGroup = EC76988A24315A2F00EDA974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC76988824315A2F00EDA974 /* Tracdemic */,
+				EC7698A324315A3100EDA974 /* TracdemicTests */,
+				EC7698AE24315A3100EDA974 /* TracdemicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC76988724315A2F00EDA974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC76989C24315A3100EDA974 /* LaunchScreen.storyboard in Resources */,
+				EC76989924315A3100EDA974 /* Assets.xcassets in Resources */,
+				EC76989724315A2F00EDA974 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7698A224315A3100EDA974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7698AD24315A3100EDA974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC76988524315A2F00EDA974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC76989424315A2F00EDA974 /* ViewController.m in Sources */,
+				EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */,
+				EC76989F24315A3100EDA974 /* main.m in Sources */,
+				EC76989124315A2F00EDA974 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7698A024315A3100EDA974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7698A924315A3100EDA974 /* TracdemicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7698AB24315A3100EDA974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7698B424315A3100EDA974 /* TracdemicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC7698A624315A3100EDA974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC76988824315A2F00EDA974 /* Tracdemic */;
+			targetProxy = EC7698A524315A3100EDA974 /* PBXContainerItemProxy */;
+		};
+		EC7698B124315A3100EDA974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC76988824315A2F00EDA974 /* Tracdemic */;
+			targetProxy = EC7698B024315A3100EDA974 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC76989524315A2F00EDA974 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC76989624315A2F00EDA974 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC76989A24315A3100EDA974 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC76989B24315A3100EDA974 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC7698B624315A3100EDA974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC7698B724315A3100EDA974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC7698B924315A3100EDA974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tracdemic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.Tracdemic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC7698BA24315A3100EDA974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tracdemic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.Tracdemic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC7698BC24315A3100EDA974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TracdemicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TracdemicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tracdemic.app/Tracdemic";
+			};
+			name = Debug;
+		};
+		EC7698BD24315A3100EDA974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TracdemicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TracdemicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tracdemic.app/Tracdemic";
+			};
+			name = Release;
+		};
+		EC7698BF24315A3100EDA974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TracdemicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TracdemicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tracdemic;
+			};
+			name = Debug;
+		};
+		EC7698C024315A3100EDA974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TracdemicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.TracdemicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tracdemic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC76988424315A2F00EDA974 /* Build configuration list for PBXProject "Tracdemic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7698B624315A3100EDA974 /* Debug */,
+				EC7698B724315A3100EDA974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7698B824315A3100EDA974 /* Build configuration list for PBXNativeTarget "Tracdemic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7698B924315A3100EDA974 /* Debug */,
+				EC7698BA24315A3100EDA974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7698BB24315A3100EDA974 /* Build configuration list for PBXNativeTarget "TracdemicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7698BC24315A3100EDA974 /* Debug */,
+				EC7698BD24315A3100EDA974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7698BE24315A3100EDA974 /* Build configuration list for PBXNativeTarget "TracdemicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7698BF24315A3100EDA974 /* Debug */,
+				EC7698C024315A3100EDA974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC76988124315A2F00EDA974 /* Project object */;
+}
