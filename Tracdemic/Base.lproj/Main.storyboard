@@ -74,6 +74,9 @@
                                     <constraint firstAttribute="height" constant="30" id="psx-sq-IMw"/>
                                 </constraints>
                                 <state key="normal" title="Record Me"/>
+                                <connections>
+                                    <segue destination="Pc7-ap-m7D" kind="show" identifier="RecordMe" id="fxd-fE-74a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
