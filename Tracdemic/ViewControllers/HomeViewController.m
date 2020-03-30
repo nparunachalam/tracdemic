@@ -16,7 +16,7 @@
 #import "StatusUpdateViewController.h"
 #import "CircleViewInfo.h"
 
-#define kPageTitle @"Tracdemic"
+#define kPageTitle @"PanTrac"
 
 @interface HomeViewController () <CLLocationManagerDelegate, MKMapViewDelegate, MapSearchSelectionDelegate, UISearchBarDelegate>
 
@@ -208,6 +208,8 @@
     [annotation setCoordinate:[placemark coordinate]];
     [annotation setTitle:[placemark name]];
     
+    self.userCurrentLocation = [placemark coordinate];
+    
     if([placemark administrativeArea]) {
         [annotation setSubtitle:[NSString stringWithFormat:@"%@ %@", placemark.locality, placemark.administrativeArea]];
     }
@@ -219,6 +221,7 @@
     [self.mapView setSelectedAnnotations:@[annotation]];
     
     [self updateTitle];
+    [self createRandomCircles];
     
 }
 
