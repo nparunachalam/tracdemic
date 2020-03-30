@@ -98,6 +98,38 @@
             endingLineNumber = "21"
             landmarkName = "HomeViewController()"
             landmarkType = "2">
+            <Locations>
+               <Location
+                  uuid = "FB750388-69E8-4E41-BD60-15178ACF8841 - af1ae574142fc042"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HomeViewController searchBar]"
+                  moduleName = "Tracdemic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oruvan/Desktop/Covid19/Tracdemic/Tracdemic/ViewControllers/HomeViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "FB750388-69E8-4E41-BD60-15178ACF8841 - 33ac8be8787251dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HomeViewController setSearchBar:]"
+                  moduleName = "Tracdemic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oruvan/Desktop/Covid19/Tracdemic/Tracdemic/ViewControllers/HomeViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
