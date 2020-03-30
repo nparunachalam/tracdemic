@@ -33,6 +33,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setRootViewController:self.drawerController];
     
+    
+//    [[UINavigationBar appearance] setBackgroundImage:[[UIImage imageNamed:@"title1.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)] forBarMetrics:UIBarMetricsDefault];
+    
+//    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    
     [self.window makeKeyAndVisible];
 
     return YES;

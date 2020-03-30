@@ -13,6 +13,8 @@
 		EC33ACEB2431E2B1006F59A1 /* LikelyExposureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACEA2431E2B1006F59A1 /* LikelyExposureViewController.m */; };
 		EC33ACEE2431E2C4006F59A1 /* MedicalDiagnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACED2431E2C4006F59A1 /* MedicalDiagnosisViewController.m */; };
 		EC33ACF12431EBCF006F59A1 /* CircleViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACF02431EBCF006F59A1 /* CircleViewInfo.m */; };
+		EC33ACF42432007D006F59A1 /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACF32432007D006F59A1 /* ProfileHeaderView.m */; };
+		EC33ACF624320086006F59A1 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33ACF524320086006F59A1 /* ProfileHeaderView.xib */; };
 		EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76988D24315A2F00EDA974 /* AppDelegate.m */; };
 		EC76989724315A2F00EDA974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989524315A2F00EDA974 /* Main.storyboard */; };
 		EC76989924315A3100EDA974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC76989824315A3100EDA974 /* Assets.xcassets */; };
@@ -60,6 +62,9 @@
 		EC33ACED2431E2C4006F59A1 /* MedicalDiagnosisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalDiagnosisViewController.m; sourceTree = "<group>"; };
 		EC33ACEF2431EBCF006F59A1 /* CircleViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleViewInfo.h; sourceTree = "<group>"; };
 		EC33ACF02431EBCF006F59A1 /* CircleViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewInfo.m; sourceTree = "<group>"; };
+		EC33ACF22432007D006F59A1 /* ProfileHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
+		EC33ACF32432007D006F59A1 /* ProfileHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
+		EC33ACF524320086006F59A1 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 		EC76988924315A2F00EDA974 /* Tracdemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracdemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC76988C24315A2F00EDA974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC76988D24315A2F00EDA974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +130,9 @@
 				EC33ACE32431B70A006F59A1 /* PinAnnotationView.m */,
 				EC33ACEF2431EBCF006F59A1 /* CircleViewInfo.h */,
 				EC33ACF02431EBCF006F59A1 /* CircleViewInfo.m */,
+				EC33ACF22432007D006F59A1 /* ProfileHeaderView.h */,
+				EC33ACF32432007D006F59A1 /* ProfileHeaderView.m */,
+				EC33ACF524320086006F59A1 /* ProfileHeaderView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -337,6 +345,7 @@
 				EC76989C24315A3100EDA974 /* LaunchScreen.storyboard in Resources */,
 				EC76989924315A3100EDA974 /* Assets.xcassets in Resources */,
 				EC76989724315A2F00EDA974 /* Main.storyboard in Resources */,
+				EC33ACF624320086006F59A1 /* ProfileHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +385,7 @@
 				EC7698EC2431749A00EDA974 /* RecordMeViewController.m in Sources */,
 				EC33ACEB2431E2B1006F59A1 /* LikelyExposureViewController.m in Sources */,
 				EC7698CC24315C4800EDA974 /* HomeViewController.m in Sources */,
+				EC33ACF42432007D006F59A1 /* ProfileHeaderView.m in Sources */,
 				EC7698E92431745500EDA974 /* MyProfileTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
