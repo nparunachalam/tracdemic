@@ -14,6 +14,7 @@
 #import "LocationSearchTableViewController.h"
 #import "PinAnnotationView.h"
 #import "StatusUpdateViewController.h"
+#import "CircleViewInfo.h"
 
 @interface HomeViewController () <CLLocationManagerDelegate, MKMapViewDelegate, MapSearchSelectionDelegate>
 
@@ -142,11 +143,12 @@
     
     self.userCurrentLocation = coord;
     
-    MKPointAnnotation *myLocation = [[MKPointAnnotation alloc] init];
-    [myLocation setCoordinate:coord];
-    [myLocation setTitle:@"My Location"];
-    [self.mapView addAnnotation:myLocation];
+//    MKPointAnnotation *myLocation = [[MKPointAnnotation alloc] init];
+//    [myLocation setCoordinate:coord];
+//    [myLocation setTitle:@"My Location"];
+//    [self.mapView addAnnotation:myLocation];
     
+    [self createRandomCircles];
     [self stopTracingUserLocation];
 }
 
@@ -199,11 +201,53 @@
     }
     
     [self.mapView addAnnotation:annotation];
-    MKCoordinateSpan span = MKCoordinateSpanMake(0.0005, 0.0005);
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.05, 0.05);
     MKCoordinateRegion region = MKCoordinateRegionMake([placemark coordinate], span);
     [self.mapView setRegion:region];
     [self.mapView setSelectedAnnotations:@[annotation]];
     
+}
+
+#pragma mark -
+
+-(void) addCircle {
+    CLLocationDistance fenceDistance = 300;
+    CLLocationCoordinate2D circleMiddlePoint = CLLocationCoordinate2DMake(self.userCurrentLocation.latitude, self.userCurrentLocation.longitude);
+    MKCircle *circle = [MKCircle circleWithCenterCoordinate:circleMiddlePoint radius:fenceDistance];
+    [self.mapView addOverlay: circle];
+    
+}
+
+
+-(MKOverlayRenderer*)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+    
+    if([overlay isKindOfClass:[MKCircle class]]) {
+        
+        MKCircleRenderer *circle = [[MKCircleRenderer alloc] initWithOverlay:overlay];
+        [circle setStrokeColor:[UIColor redColor]];
+        [circle setFillColor:[UIColor colorWithRed:255/255 green:0 blue:0 alpha:0.1]];
+        [circle setLineWidth:1.0];
+        return circle;
+    }
+    else {
+        return nil;
+    }
+    
+}
+
+-(void) createRandomCircles {
+    
+    NSMutableArray *circleDetailsArray = [NSMutableArray array];
+    [circleDetailsArray addObject:[CircleViewInfo initWithDistance:250 coord:self.userCurrentLocation xOffset:10000 yOffset:4000]];
+    [circleDetailsArray addObject:[CircleViewInfo initWithDistance:1000 coord:self.userCurrentLocation xOffset:5000 yOffset:3000]];
+    [circleDetailsArray addObject:[CircleViewInfo initWithDistance:800 coord:self.userCurrentLocation xOffset:2000 yOffset:500]];
+ 
+    [circleDetailsArray enumerateObjectsUsingBlock:^(CircleViewInfo *circleInfo, NSUInteger idx, BOOL * _Nonnull stop) {
+        CLLocationCoordinate2D circleMiddlePoint = CLLocationCoordinate2DMake(circleInfo.locationCoord.latitude, circleInfo.locationCoord.longitude);
+        MKCircle *circle = [MKCircle circleWithCenterCoordinate:circleMiddlePoint radius:circleInfo.distanceInMeters];
+        [self.mapView addOverlay: circle];
+        
+    }];
 }
 
 @end
