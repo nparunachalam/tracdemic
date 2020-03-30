@@ -8,20 +8,27 @@
 
 #import "LikelyExposureViewController.h"
 
-@interface LikelyExposureViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface LikelyExposureViewController () <UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UITableView* tableView;
+
+@property (strong, nonatomic) UILabel* exposureTypeLabel;
+@property (strong, nonatomic) NSArray* exposureTypeOptionsArray;
 
 @end
 
 @implementation LikelyExposureViewController
 
 @synthesize tableView;
+@synthesize exposureTypeLabel;
+@synthesize exposureTypeOptionsArray;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setTitle:@"Likely Exposure"];
+    
+    exposureTypeOptionsArray=[[NSArray alloc]initWithObjects:@"Dogs", @"Cats", @"Tiger",@"Lion",@"Elephant",nil];
     
     tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
 
@@ -35,6 +42,13 @@
 
     // add to canvas
     [self.view addSubview:tableView];
+
+
+    UIPickerView *picker=[[UIPickerView alloc]init];
+    picker.dataSource=self;
+    picker.delegate=self;
+    [picker setShowsSelectionIndicator:YES];
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView {
@@ -61,7 +75,10 @@
         [cell.textLabel setText:@"Location"];
     }
     else if(indexPath.row == 1) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
         [cell.textLabel setText:@"Exposure Type"];
+        exposureTypeLabel = cell.detailTextLabel;
+        [cell.detailTextLabel setText:@"Airborne"];
     }
     else {
         [cell.textLabel setText:@"Approximate Time"];
@@ -83,6 +100,31 @@
     }
     else if(indexPath.row == 2) {
     }
+}
+
+#pragma mark - UIPickerView DataSource Method
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [exposureTypeOptionsArray count];
+}
+
+#pragma mark - UIPickerView Delegate Method
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [exposureTypeOptionsArray objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    self.exposureTypeLabel.text=[exposureTypeOptionsArray objectAtIndex:row];
 }
 
 @end
