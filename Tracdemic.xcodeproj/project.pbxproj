@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC33ACE42431B70A006F59A1 /* PinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACE32431B70A006F59A1 /* PinAnnotationView.m */; };
 		EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76988D24315A2F00EDA974 /* AppDelegate.m */; };
 		EC76989724315A2F00EDA974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989524315A2F00EDA974 /* Main.storyboard */; };
 		EC76989924315A3100EDA974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC76989824315A3100EDA974 /* Assets.xcassets */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC33ACE22431B70A006F59A1 /* PinAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinAnnotationView.h; sourceTree = "<group>"; };
+		EC33ACE32431B70A006F59A1 /* PinAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinAnnotationView.m; sourceTree = "<group>"; };
 		EC76988924315A2F00EDA974 /* Tracdemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracdemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC76988C24315A2F00EDA974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC76988D24315A2F00EDA974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC33ACDE2431B649006F59A1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EC33ACE22431B70A006F59A1 /* PinAnnotationView.h */,
+				EC33ACE32431B70A006F59A1 /* PinAnnotationView.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		EC76988024315A2F00EDA974 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 		EC76988B24315A2F00EDA974 /* Tracdemic */ = {
 			isa = PBXGroup;
 			children = (
+				EC33ACDE2431B649006F59A1 /* CustomViews */,
 				EC7698D9243165D900EDA974 /* MMDrawerController */,
 				EC7698C524315BD800EDA974 /* ViewControllers */,
 				EC76988C24315A2F00EDA974 /* AppDelegate.h */,
@@ -319,6 +332,7 @@
 				EC7698E3243165D900EDA974 /* MMDrawerBarButtonItem.m in Sources */,
 				EC7698E5243165D900EDA974 /* MMDrawerController.m in Sources */,
 				EC7698E6243165D900EDA974 /* MMDrawerVisualState.m in Sources */,
+				EC33ACE42431B70A006F59A1 /* PinAnnotationView.m in Sources */,
 				EC7698E4243165D900EDA974 /* UIViewController+MMDrawerController.m in Sources */,
 				EC76989F24315A3100EDA974 /* main.m in Sources */,
 				EC7698EF243191E600EDA974 /* LocationSearchTableViewController.m in Sources */,

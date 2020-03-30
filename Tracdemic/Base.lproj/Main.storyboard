@@ -74,9 +74,6 @@
                                     <constraint firstAttribute="height" constant="30" id="psx-sq-IMw"/>
                                 </constraints>
                                 <state key="normal" title="Record Me"/>
-                                <connections>
-                                    <segue destination="Pc7-ap-m7D" kind="show" id="Hb9-V5-cng"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -103,7 +100,7 @@
         <!--Record Me-->
         <scene sceneID="DhD-oi-Cyt">
             <objects>
-                <viewController id="Pc7-ap-m7D" customClass="RecordMeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecordMe" id="Pc7-ap-m7D" customClass="RecordMeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SXE-XE-CMK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
