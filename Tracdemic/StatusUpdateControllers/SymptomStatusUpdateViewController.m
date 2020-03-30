@@ -61,6 +61,13 @@
     // add to canvas
     [self.view addSubview:tableView];
     
+    UIBarButtonItem* saveButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Save"
+                                   style:UIBarButtonItemStyleBordered
+                                   target:self
+                                   action:@selector(saveSymptomsButtonClicked:)];
+    self.navigationItem.rightBarButtonItem = saveButton;
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView
@@ -103,6 +110,10 @@
 - (void)switchChanged:(id)sender {
     UISwitch *switchControl = sender;
     NSLog( @"SymptomStatusUpdateViewController: switch is %@", switchControl.on ? @"ON" : @"OFF" );
+}
+
+- (void)saveSymptomsButtonClicked:(id)sender {
+    NSLog( @"SymptomStatusUpdateViewController: saveSymptomsButtonClicked");
 }
 
 @end
