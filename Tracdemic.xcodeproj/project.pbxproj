@@ -68,7 +68,7 @@
 		EC33ACF524320086006F59A1 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 		EC33ACF724320AB8006F59A1 /* SymptomsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymptomsViewController.h; sourceTree = "<group>"; };
 		EC33ACF824320AB8006F59A1 /* SymptomsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymptomsViewController.m; sourceTree = "<group>"; };
-		EC76988924315A2F00EDA974 /* Tracdemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracdemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC76988924315A2F00EDA974 /* PanTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC76988C24315A2F00EDA974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC76988D24315A2F00EDA974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EC76989624315A2F00EDA974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		EC76988A24315A2F00EDA974 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC76988924315A2F00EDA974 /* Tracdemic.app */,
+				EC76988924315A2F00EDA974 /* PanTrac.app */,
 				EC7698A424315A3100EDA974 /* TracdemicTests.xctest */,
 				EC7698AF24315A3100EDA974 /* TracdemicUITests.xctest */,
 			);
@@ -261,7 +261,7 @@
 			);
 			name = Tracdemic;
 			productName = Tracdemic;
-			productReference = EC76988924315A2F00EDA974 /* Tracdemic.app */;
+			productReference = EC76988924315A2F00EDA974 /* PanTrac.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EC7698A324315A3100EDA974 /* TracdemicTests */ = {
@@ -569,7 +569,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oruvan.Tracdemic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PanTrac;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -586,7 +586,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oruvan.Tracdemic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PanTrac;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
