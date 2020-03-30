@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  RecordMeViewController.h
 //  Tracdemic
 //
 //  Created by Oruvan on 3/29/20.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (nonatomic, strong) UIWindow *window;
+@interface RecordMeViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

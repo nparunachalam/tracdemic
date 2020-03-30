@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76988D24315A2F00EDA974 /* AppDelegate.m */; };
-		EC76989124315A2F00EDA974 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76989024315A2F00EDA974 /* SceneDelegate.m */; };
-		EC76989424315A2F00EDA974 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76989324315A2F00EDA974 /* ViewController.m */; };
 		EC76989724315A2F00EDA974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989524315A2F00EDA974 /* Main.storyboard */; };
 		EC76989924315A3100EDA974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC76989824315A3100EDA974 /* Assets.xcassets */; };
 		EC76989C24315A3100EDA974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989A24315A3100EDA974 /* LaunchScreen.storyboard */; };
 		EC76989F24315A3100EDA974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76989E24315A3100EDA974 /* main.m */; };
 		EC7698A924315A3100EDA974 /* TracdemicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698A824315A3100EDA974 /* TracdemicTests.m */; };
 		EC7698B424315A3100EDA974 /* TracdemicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698B324315A3100EDA974 /* TracdemicUITests.m */; };
+		EC7698CC24315C4800EDA974 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698CB24315C4800EDA974 /* HomeViewController.m */; };
+		EC7698E3243165D900EDA974 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698DA243165D900EDA974 /* MMDrawerBarButtonItem.m */; };
+		EC7698E4243165D900EDA974 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698DB243165D900EDA974 /* UIViewController+MMDrawerController.m */; };
+		EC7698E5243165D900EDA974 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698DC243165D900EDA974 /* MMDrawerController.m */; };
+		EC7698E6243165D900EDA974 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698E1243165D900EDA974 /* MMDrawerVisualState.m */; };
+		EC7698E92431745500EDA974 /* MyProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698E82431745500EDA974 /* MyProfileTableViewController.m */; };
+		EC7698EC2431749A00EDA974 /* RecordMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698EB2431749A00EDA974 /* RecordMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +44,6 @@
 		EC76988924315A2F00EDA974 /* Tracdemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracdemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC76988C24315A2F00EDA974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC76988D24315A2F00EDA974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC76988F24315A2F00EDA974 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		EC76989024315A2F00EDA974 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		EC76989224315A2F00EDA974 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC76989324315A2F00EDA974 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EC76989624315A2F00EDA974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC76989824315A3100EDA974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC76989B24315A3100EDA974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +55,21 @@
 		EC7698AF24315A3100EDA974 /* TracdemicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TracdemicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7698B324315A3100EDA974 /* TracdemicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TracdemicUITests.m; sourceTree = "<group>"; };
 		EC7698B524315A3100EDA974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7698CA24315C4800EDA974 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EC7698CB24315C4800EDA974 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EC7698DA243165D900EDA974 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		EC7698DB243165D900EDA974 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		EC7698DC243165D900EDA974 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		EC7698DD243165D900EDA974 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		EC7698DE243165D900EDA974 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		EC7698DF243165D900EDA974 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		EC7698E0243165D900EDA974 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		EC7698E1243165D900EDA974 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		EC7698E2243165D900EDA974 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		EC7698E72431745500EDA974 /* MyProfileTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProfileTableViewController.h; sourceTree = "<group>"; };
+		EC7698E82431745500EDA974 /* MyProfileTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProfileTableViewController.m; sourceTree = "<group>"; };
+		EC7698EA2431749A00EDA974 /* RecordMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordMeViewController.h; sourceTree = "<group>"; };
+		EC7698EB2431749A00EDA974 /* RecordMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +120,10 @@
 		EC76988B24315A2F00EDA974 /* Tracdemic */ = {
 			isa = PBXGroup;
 			children = (
+				EC7698D9243165D900EDA974 /* MMDrawerController */,
+				EC7698C524315BD800EDA974 /* ViewControllers */,
 				EC76988C24315A2F00EDA974 /* AppDelegate.h */,
 				EC76988D24315A2F00EDA974 /* AppDelegate.m */,
-				EC76988F24315A2F00EDA974 /* SceneDelegate.h */,
-				EC76989024315A2F00EDA974 /* SceneDelegate.m */,
-				EC76989224315A2F00EDA974 /* ViewController.h */,
-				EC76989324315A2F00EDA974 /* ViewController.m */,
 				EC76989524315A2F00EDA974 /* Main.storyboard */,
 				EC76989824315A3100EDA974 /* Assets.xcassets */,
 				EC76989A24315A3100EDA974 /* LaunchScreen.storyboard */,
@@ -135,6 +149,35 @@
 				EC7698B524315A3100EDA974 /* Info.plist */,
 			);
 			path = TracdemicUITests;
+			sourceTree = "<group>";
+		};
+		EC7698C524315BD800EDA974 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC7698CA24315C4800EDA974 /* HomeViewController.h */,
+				EC7698CB24315C4800EDA974 /* HomeViewController.m */,
+				EC7698E72431745500EDA974 /* MyProfileTableViewController.h */,
+				EC7698E82431745500EDA974 /* MyProfileTableViewController.m */,
+				EC7698EA2431749A00EDA974 /* RecordMeViewController.h */,
+				EC7698EB2431749A00EDA974 /* RecordMeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EC7698D9243165D900EDA974 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				EC7698DB243165D900EDA974 /* UIViewController+MMDrawerController.m */,
+				EC7698E0243165D900EDA974 /* UIViewController+MMDrawerController.h */,
+				EC7698DD243165D900EDA974 /* MMDrawerController+Subclass.h */,
+				EC7698DE243165D900EDA974 /* MMDrawerVisualState.h */,
+				EC7698E1243165D900EDA974 /* MMDrawerVisualState.m */,
+				EC7698DF243165D900EDA974 /* MMDrawerBarButtonItem.h */,
+				EC7698DA243165D900EDA974 /* MMDrawerBarButtonItem.m */,
+				EC7698E2243165D900EDA974 /* MMDrawerController.h */,
+				EC7698DC243165D900EDA974 /* MMDrawerController.m */,
+			);
+			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC76989424315A2F00EDA974 /* ViewController.m in Sources */,
 				EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */,
+				EC7698E3243165D900EDA974 /* MMDrawerBarButtonItem.m in Sources */,
+				EC7698E5243165D900EDA974 /* MMDrawerController.m in Sources */,
+				EC7698E6243165D900EDA974 /* MMDrawerVisualState.m in Sources */,
+				EC7698E4243165D900EDA974 /* UIViewController+MMDrawerController.m in Sources */,
 				EC76989F24315A3100EDA974 /* main.m in Sources */,
-				EC76989124315A2F00EDA974 /* SceneDelegate.m in Sources */,
+				EC7698EC2431749A00EDA974 /* RecordMeViewController.m in Sources */,
+				EC7698CC24315C4800EDA974 /* HomeViewController.m in Sources */,
+				EC7698E92431745500EDA974 /* MyProfileTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
