@@ -128,37 +128,10 @@
     [self stopTracingUserLocation];
 }
 
-
-
-//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-//
-//    if(annotation.class == [MKPinAnnotationView class]) {
-//
-////        PinAnnotationView *pinView = (PinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"SelectedLocation" forAnnotation:annotation];
-////        pinView.canShowCallout = YES;
-////        [pinView setTintColor:[UIColor purpleColor]];
-////
-////        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-////        pinView.leftCalloutAccessoryView = button;
-//
-//        MKPinAnnotationView *pinView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pin" forAnnotation:annotation];
-//        [pinView setCanShowCallout:YES];
-//        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-//        [button setImage:[UIImage imageNamed:@"addButton.png"] forState:UIControlStateNormal];
-//        [button sizeToFit];
-//        pinView.leftCalloutAccessoryView = button;
-//
-//        return pinView;
-//    }
-//    else {
-//        return nil;
-//    }
-//}
-
 -(MKAnnotationView *)mapView:(MKMapView *)map
-        viewForAnnotation:(id <MKAnnotation>)annotation
-{
-    static NSString *AnnotationViewID = @"stationViewId";
+        viewForAnnotation:(id <MKAnnotation>)annotation {
+    
+    static NSString *AnnotationViewID = @"annotationViewId";
 
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
         return nil;  // use default user location view
@@ -168,10 +141,8 @@
         (MKPinAnnotationView*) [self.mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
 
     if (annotationView == nil) {
-        // if an existing pin view was not available, create one
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
 
-        // add rightAccessoryView
         UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [rightButton setImage:[UIImage imageNamed:@"addButton"] forState:UIControlStateNormal];
         [rightButton sizeToFit];
@@ -209,6 +180,7 @@
     MKCoordinateSpan span = MKCoordinateSpanMake(0.05, 0.05);
     MKCoordinateRegion region = MKCoordinateRegionMake([placemark coordinate], span);
     [self.mapView setRegion:region];
+    [self.mapView setSelectedAnnotations:@[annotation]];
     
 }
 
