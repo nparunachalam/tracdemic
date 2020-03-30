@@ -64,8 +64,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
             endingLineNumber = "134"
-            landmarkName = "HomeViewController"
-            landmarkType = "3">
+            landmarkName = "-mapView:viewForAnnotation:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,8 +80,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "137"
             endingLineNumber = "137"
-            landmarkName = "HomeViewController"
-            landmarkType = "3">
+            landmarkName = "-mapView:viewForAnnotation:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "163"
             endingLineNumber = "163"
-            landmarkName = "-mapView:viewForAnnotation:"
+            landmarkName = "-addButtonAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

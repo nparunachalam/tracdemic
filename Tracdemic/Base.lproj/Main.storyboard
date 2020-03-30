@@ -74,6 +74,9 @@
                                     <constraint firstAttribute="height" constant="30" id="psx-sq-IMw"/>
                                 </constraints>
                                 <state key="normal" title="Record Me"/>
+                                <connections>
+                                    <segue destination="Pc7-ap-m7D" kind="show" identifier="RecordMe" id="fxd-fE-74a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -112,6 +115,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPw-8r-tLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2059" y="-703"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sNL-zS-uue">
+            <objects>
+                <viewController storyboardIdentifier="AddDetails" id="PMI-qU-MTa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mye-6e-snb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PA3-8j-e9a"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EcO-vF-EaY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUf-9Q-tLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2713" y="-1371"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="uo9-vy-ZMW">

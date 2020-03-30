@@ -7,6 +7,7 @@
 //
 
 #import "RecordMeViewController.h"
+#import "StatusUpdateViewController.h"
 
 @interface RecordMeViewController ()
 
@@ -16,7 +17,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addTarget:self
+               action:@selector(statusUpdateButtonClicked:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Status Update" forState:UIControlStateNormal];
+    [button setBackgroundColor:UIColor.blueColor];
+    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+    [self.view addSubview:button];
+    
+
+    button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addTarget:self
+               action:@selector(statusUpdateButtonClicked:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Record Me" forState:UIControlStateNormal];
+    [button setBackgroundColor:UIColor.blueColor];
+    button.frame = CGRectMake(80.0, 410.0, 160.0, 40.0);
+    [self.view addSubview:button];
+    
+}
+
+-(void) recordMeButtonClicked:(UIButton*)sender {
+    NSLog(@"recordMeButtonClicked enter");
+
+    UIAlertController * disabledContactsAlert = [UIAlertController alertControllerWithTitle:@"Thank you"
+                message:@"Your location/route will be anonymous recorded"
+                preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction* ok = [UIAlertAction
+                actionWithTitle:@"OK"
+                style:UIAlertActionStyleDefault
+                handler:^(UIAlertAction * action) {
+                }];
+
+    [disabledContactsAlert addAction:ok];
+    //    [disabledContactsAlert addAction:settingsButton];
+    [self presentViewController:disabledContactsAlert animated:YES completion:nil];
+
+    NSLog(@"recordMeButtonClicked exit");
+}
+
+-(void) statusUpdateButtonClicked:(UIButton*)sender {
+    NSLog(@"statusUpdateButtonClicked enter");
+
+    StatusUpdateViewController* statusUpdateViewController = [[StatusUpdateViewController alloc] initWithNibName:NULL bundle:NULL];
+    [self.navigationController pushViewController:statusUpdateViewController animated:NO];
+
+    NSLog(@"statusUpdateButtonClicked exit");
 }
 
 /*

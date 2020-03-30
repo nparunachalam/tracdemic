@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2CFE3162431B55B00DA8518 /* StatusUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFE3152431B55B00DA8518 /* StatusUpdateViewController.m */; };
+		A2CFE3192431CA1200DA8518 /* SymptomStatusUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFE3172431CA1200DA8518 /* SymptomStatusUpdateViewController.m */; };
 		EC33ACE42431B70A006F59A1 /* PinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACE32431B70A006F59A1 /* PinAnnotationView.m */; };
 		EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76988D24315A2F00EDA974 /* AppDelegate.m */; };
 		EC76989724315A2F00EDA974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989524315A2F00EDA974 /* Main.storyboard */; };
@@ -43,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2CFE3142431B55B00DA8518 /* StatusUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusUpdateViewController.h; sourceTree = "<group>"; };
+		A2CFE3152431B55B00DA8518 /* StatusUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusUpdateViewController.m; sourceTree = "<group>"; };
+		A2CFE3172431CA1200DA8518 /* SymptomStatusUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomStatusUpdateViewController.m; sourceTree = "<group>"; };
+		A2CFE3182431CA1200DA8518 /* SymptomStatusUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomStatusUpdateViewController.h; sourceTree = "<group>"; };
 		EC33ACE22431B70A006F59A1 /* PinAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinAnnotationView.h; sourceTree = "<group>"; };
 		EC33ACE32431B70A006F59A1 /* PinAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinAnnotationView.m; sourceTree = "<group>"; };
 		EC76988924315A2F00EDA974 /* Tracdemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracdemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +176,10 @@
 		EC7698C524315BD800EDA974 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A2CFE3182431CA1200DA8518 /* SymptomStatusUpdateViewController.h */,
+				A2CFE3172431CA1200DA8518 /* SymptomStatusUpdateViewController.m */,
+				A2CFE3142431B55B00DA8518 /* StatusUpdateViewController.h */,
+				A2CFE3152431B55B00DA8518 /* StatusUpdateViewController.m */,
 				EC7698CA24315C4800EDA974 /* HomeViewController.h */,
 				EC7698CB24315C4800EDA974 /* HomeViewController.m */,
 				EC7698E72431745500EDA974 /* MyProfileTableViewController.h */,
@@ -329,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */,
+				A2CFE3162431B55B00DA8518 /* StatusUpdateViewController.m in Sources */,
 				EC7698E3243165D900EDA974 /* MMDrawerBarButtonItem.m in Sources */,
 				EC7698E5243165D900EDA974 /* MMDrawerController.m in Sources */,
 				EC7698E6243165D900EDA974 /* MMDrawerVisualState.m in Sources */,
@@ -337,6 +348,7 @@
 				EC76989F24315A3100EDA974 /* main.m in Sources */,
 				EC7698EF243191E600EDA974 /* LocationSearchTableViewController.m in Sources */,
 				EC7698EC2431749A00EDA974 /* RecordMeViewController.m in Sources */,
+				A2CFE3192431CA1200DA8518 /* SymptomStatusUpdateViewController.m in Sources */,
 				EC7698CC24315C4800EDA974 /* HomeViewController.m in Sources */,
 				EC7698E92431745500EDA974 /* MyProfileTableViewController.m in Sources */,
 			);

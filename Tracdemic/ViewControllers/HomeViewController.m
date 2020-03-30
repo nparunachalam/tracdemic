@@ -158,7 +158,7 @@
 }
 
 -(void)addButtonAction:(id)sender {
-    UIViewController *recordMeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RecordMe"];
+    UIViewController *recordMeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddDetails"];
     [self.navigationController showViewController:recordMeViewController sender:self];
 }
 
