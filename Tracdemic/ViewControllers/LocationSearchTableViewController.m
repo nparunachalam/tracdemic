@@ -87,7 +87,7 @@
     NSString *comma = ((selectedItem.subThoroughfare || selectedItem.thoroughfare) && (selectedItem.administrativeArea || selectedItem.subAdministrativeArea) ) ? @", " : @"";
     NSString *secondSpace = (selectedItem.subAdministrativeArea && selectedItem.administrativeArea) ? @" " : @"";
     
-    NSString *addressLine = [NSString stringWithFormat:@"%@%@%@%@%@%@%@", selectedItem.subThoroughfare, firstSpace, selectedItem.thoroughfare, comma, selectedItem.locality, secondSpace, selectedItem.administrativeArea];
+    NSString *addressLine = [NSString stringWithFormat:@"%@%@%@%@%@%@%@", ([selectedItem.subThoroughfare length])?selectedItem.subThoroughfare:@"", firstSpace, ([selectedItem.thoroughfare length])?selectedItem.thoroughfare:@"", comma, ([selectedItem.locality length])?selectedItem.locality:@"", secondSpace, ([selectedItem.administrativeArea length])?selectedItem.administrativeArea:@""];
     
     return addressLine;
 }

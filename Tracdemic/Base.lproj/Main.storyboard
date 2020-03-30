@@ -69,10 +69,10 @@
                                 <rect key="frame" x="0.0" y="828" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RRq-He-KaU"/>
+                                    <barButtonItem width="80" style="plain" systemItem="fixedSpace" id="RRq-He-KaU"/>
                                     <barButtonItem style="plain" id="XiV-7a-wb5">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="krM-Di-BO9">
-                                            <rect key="frame" x="99.5" y="4" width="63" height="36"/>
+                                            <rect key="frame" x="80" y="4" width="63" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="ywQ-WB-Wnn"/>
@@ -89,7 +89,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="SB7-o4-d4K"/>
                                     <barButtonItem style="plain" id="NDx-vD-8AK">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rDC-Au-RQ7">
-                                            <rect key="frame" x="261.5" y="4" width="53" height="36"/>
+                                            <rect key="frame" x="281" y="4" width="53" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="jsV-bv-sYm"/>
@@ -104,7 +104,7 @@
                                             </connections>
                                         </button>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dkh-cy-djk"/>
+                                    <barButtonItem width="80" style="plain" systemItem="fixedSpace" id="dkh-cy-djk"/>
                                 </items>
                             </toolbar>
                         </subviews>
