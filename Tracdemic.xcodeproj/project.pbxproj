@@ -15,6 +15,7 @@
 		EC33ACF12431EBCF006F59A1 /* CircleViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACF02431EBCF006F59A1 /* CircleViewInfo.m */; };
 		EC33ACF42432007D006F59A1 /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACF32432007D006F59A1 /* ProfileHeaderView.m */; };
 		EC33ACF624320086006F59A1 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33ACF524320086006F59A1 /* ProfileHeaderView.xib */; };
+		EC33ACF924320AB8006F59A1 /* SymptomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33ACF824320AB8006F59A1 /* SymptomsViewController.m */; };
 		EC76988E24315A2F00EDA974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC76988D24315A2F00EDA974 /* AppDelegate.m */; };
 		EC76989724315A2F00EDA974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76989524315A2F00EDA974 /* Main.storyboard */; };
 		EC76989924315A3100EDA974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC76989824315A3100EDA974 /* Assets.xcassets */; };
@@ -65,6 +66,8 @@
 		EC33ACF22432007D006F59A1 /* ProfileHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
 		EC33ACF32432007D006F59A1 /* ProfileHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
 		EC33ACF524320086006F59A1 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		EC33ACF724320AB8006F59A1 /* SymptomsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymptomsViewController.h; sourceTree = "<group>"; };
+		EC33ACF824320AB8006F59A1 /* SymptomsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymptomsViewController.m; sourceTree = "<group>"; };
 		EC76988924315A2F00EDA974 /* Tracdemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracdemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC76988C24315A2F00EDA974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC76988D24315A2F00EDA974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 				EC7698EB2431749A00EDA974 /* RecordMeViewController.m */,
 				EC7698ED243191E600EDA974 /* LocationSearchTableViewController.h */,
 				EC7698EE243191E600EDA974 /* LocationSearchTableViewController.m */,
+				EC33ACF724320AB8006F59A1 /* SymptomsViewController.h */,
+				EC33ACF824320AB8006F59A1 /* SymptomsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				EC7698EF243191E600EDA974 /* LocationSearchTableViewController.m in Sources */,
 				EC7698EC2431749A00EDA974 /* RecordMeViewController.m in Sources */,
 				EC33ACEB2431E2B1006F59A1 /* LikelyExposureViewController.m in Sources */,
+				EC33ACF924320AB8006F59A1 /* SymptomsViewController.m in Sources */,
 				EC7698CC24315C4800EDA974 /* HomeViewController.m in Sources */,
 				EC33ACF42432007D006F59A1 /* ProfileHeaderView.m in Sources */,
 				EC7698E92431745500EDA974 /* MyProfileTableViewController.m in Sources */,

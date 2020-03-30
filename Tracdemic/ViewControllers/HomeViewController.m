@@ -16,7 +16,9 @@
 #import "StatusUpdateViewController.h"
 #import "CircleViewInfo.h"
 
-@interface HomeViewController () <CLLocationManagerDelegate, MKMapViewDelegate, MapSearchSelectionDelegate>
+#define kPageTitle @"Tracdemic"
+
+@interface HomeViewController () <CLLocationManagerDelegate, MKMapViewDelegate, MapSearchSelectionDelegate, UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -33,7 +35,7 @@
     [super viewDidLoad];
     
     [self setupLeftMenuButton];
-    
+    [self updateTitle];
     [self.mapView registerClass:[PinAnnotationView class] forAnnotationViewWithReuseIdentifier:@"SelectedLocation"];
     
     UIBarButtonItem *searchIcon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchBarButtonIconAction:)];
@@ -49,6 +51,8 @@
     [super viewWillDisappear:animated];
     [self stopTracingUserLocation];
 }
+
+#pragma mark -
 
 - (IBAction)statusUpdateButtonAction:(id)sender {
     
@@ -86,6 +90,7 @@
     UISearchBar *searchBar = [self.resultsearchController searchBar];
     [searchBar sizeToFit];
     [searchBar setPlaceholder:@"Check Address"];
+    [searchBar setDelegate:self];
     
     [self.navigationItem setTitleView:searchBar];
     
@@ -102,8 +107,15 @@
 }
 
 -(void)leftDrawerButtonPress:(id)sender{
-    [self.searchBar resignFirstResponder];
+    [self.resultsearchController.searchBar resignFirstResponder];
+    [self updateTitle];
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+#pragma mark -
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [self updateTitle];
 }
 
 #pragma mark - Location related
@@ -167,11 +179,11 @@
     if (annotationView == nil) {
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
 
-        UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [rightButton setImage:[UIImage imageNamed:@"addButton"] forState:UIControlStateNormal];
-        [rightButton sizeToFit];
-        [rightButton addTarget:self action:@selector(addButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        annotationView.rightCalloutAccessoryView = rightButton;
+//        UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [rightButton setImage:[UIImage imageNamed:@"addButton"] forState:UIControlStateNormal];
+//        [rightButton sizeToFit];
+//        [rightButton addTarget:self action:@selector(addButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        annotationView.rightCalloutAccessoryView = rightButton;
     }
 
     annotationView.annotation = annotation;
@@ -206,9 +218,16 @@
     [self.mapView setRegion:region];
     [self.mapView setSelectedAnnotations:@[annotation]];
     
+    [self updateTitle];
+    
 }
 
 #pragma mark -
+
+-(void)updateTitle {
+    [self.navigationItem setTitleView:nil];
+    [self setTitle:kPageTitle];
+}
 
 -(void) addCircle {
     CLLocationDistance fenceDistance = 300;

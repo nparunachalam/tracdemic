@@ -8,6 +8,7 @@
 
 #import "MyProfileTableViewController.h"
 #import "ProfileHeaderView.h"
+#import "UIViewController+MMDrawerController.h"
 
 @interface MyProfileTableViewController () {
     
@@ -24,8 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.section1ContentsArray = @[@"Status:"];
-    self.section2ContentsArray = @[@"Sympotoms", @"Incubators", @"Location", @"Population"];
+    self.section1ContentsArray = @[@"Status: UnInfected"];
+    self.section2ContentsArray = @[@"Symptoms", @"Incubation", @"Location", @"Population"];
     
     headerNib = [UINib nibWithNibName:@"ProfileHeaderView" bundle:[NSBundle mainBundle]];
     
@@ -74,10 +75,10 @@
     ProfileHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"HeaderView"];
     
     if(section == 0) {
-        [headerView.headerLabel setText:@"Profile Details"];
+        [headerView.headerLabel setText:@""];
     }
     else {
-        [headerView.headerLabel setText:@"Pandamic Stats"];
+        [headerView.headerLabel setText:@"Stats"];
 
     }
     return headerView;
@@ -90,6 +91,21 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 1) {
+        
+        switch (indexPath.row) {
+            case 0: {
+                UINavigationController *symptomsController = (UINavigationController*)[self.storyboard instantiateViewControllerWithIdentifier:@"SymptomsView"];
+                [self.mm_drawerController setCenterViewController:symptomsController withCloseAnimation:YES completion:nil];
+            }
+                break;
+                
+            default:
+                break;
+        }
+        
+    }
 }
 
 @end
