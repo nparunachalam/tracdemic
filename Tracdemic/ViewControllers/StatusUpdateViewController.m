@@ -8,6 +8,8 @@
 
 #import "StatusUpdateViewController.h"
 #import "SymptomStatusUpdateViewController.h"
+#import "LikelyExposureViewController.h"
+#import "MedicalDiagnosisViewController.h"
 
 @interface StatusUpdateViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -41,13 +43,11 @@
     
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)theTableView numberOfRowsInSection:    (NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)theTableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
 
@@ -82,17 +82,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if(indexPath.row == 0) {
-        NSLog(@"StatusUpdateViewController selected Symptoms");
-        SymptomStatusUpdateViewController* nextViewController = [[SymptomStatusUpdateViewController alloc] initWithNibName:NULL bundle:NULL];
+        SymptomStatusUpdateViewController* nextViewController = [[SymptomStatusUpdateViewController alloc] init];
         [self.navigationController pushViewController:nextViewController animated:YES];
     }
-    
-    if(indexPath.row == 1) {
-        NSLog(@"StatusUpdateViewController selected Exposure");
+    else if(indexPath.row == 1) {
+        LikelyExposureViewController *likelyExposureViewController = [[LikelyExposureViewController alloc] init];
+        [self.navigationController pushViewController:likelyExposureViewController animated:YES];
     }
-    
-    if(indexPath.row == 2) {
-        NSLog(@"StatusUpdateViewController selected Diagnosis");
+    else if(indexPath.row == 2) {
+        MedicalDiagnosisViewController *diagnosisViewController = [[MedicalDiagnosisViewController alloc] init];
+        [self.navigationController pushViewController:diagnosisViewController animated:YES];
     }
 }
 

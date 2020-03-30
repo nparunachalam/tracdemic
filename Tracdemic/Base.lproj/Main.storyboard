@@ -75,19 +75,33 @@
                                 </constraints>
                                 <state key="normal" title="Record Me"/>
                                 <connections>
-                                    <segue destination="Pc7-ap-m7D" kind="show" identifier="RecordMe" id="fxd-fE-74a"/>
+                                    <action selector="recordMeButtonAction:" destination="jgR-mN-uSB" eventType="touchUpInside" id="quP-eM-mch"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krM-Di-BO9">
+                                <rect key="frame" x="294" y="742" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Df6-gx-Vl0"/>
+                                    <constraint firstAttribute="height" constant="30" id="ywQ-WB-Wnn"/>
+                                </constraints>
+                                <state key="normal" title="Update Status"/>
+                                <connections>
+                                    <action selector="statusUpdateButtonAction:" destination="jgR-mN-uSB" eventType="touchUpInside" id="jaf-s0-Yd6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="C7e-uk-MUx" firstAttribute="bottom" secondItem="rDC-Au-RQ7" secondAttribute="bottom" constant="40" id="CG0-Mt-Tib"/>
+                            <constraint firstItem="rDC-Au-RQ7" firstAttribute="top" secondItem="krM-Di-BO9" secondAttribute="bottom" constant="20" id="clK-Gv-jIk"/>
                             <constraint firstItem="C7e-uk-MUx" firstAttribute="trailing" secondItem="rDC-Au-RQ7" secondAttribute="trailing" constant="20" id="dRd-xK-y46"/>
                             <constraint firstItem="baB-7L-uGh" firstAttribute="top" secondItem="C7e-uk-MUx" secondAttribute="top" id="ddJ-ek-8S0"/>
                             <constraint firstAttribute="bottom" secondItem="baB-7L-uGh" secondAttribute="bottom" constant="20" symbolic="YES" id="dh8-Ds-vey"/>
                             <constraint firstItem="baB-7L-uGh" firstAttribute="leading" secondItem="C7e-uk-MUx" secondAttribute="leading" id="g4I-FJ-17C"/>
                             <constraint firstItem="rDC-Au-RQ7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="C7e-uk-MUx" secondAttribute="leading" symbolic="YES" id="m93-ao-oec"/>
                             <constraint firstItem="baB-7L-uGh" firstAttribute="trailing" secondItem="C7e-uk-MUx" secondAttribute="trailing" id="v0g-BJ-e1Z"/>
+                            <constraint firstItem="C7e-uk-MUx" firstAttribute="trailing" secondItem="krM-Di-BO9" secondAttribute="trailing" constant="20" id="yJn-Ne-G2d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C7e-uk-MUx"/>
                     </view>

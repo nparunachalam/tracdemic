@@ -13,6 +13,7 @@
 #import <MapKit/MapKit.h>
 #import "LocationSearchTableViewController.h"
 #import "PinAnnotationView.h"
+#import "StatusUpdateViewController.h"
 
 @interface HomeViewController () <CLLocationManagerDelegate, MKMapViewDelegate, MapSearchSelectionDelegate>
 
@@ -47,6 +48,27 @@
     [super viewWillDisappear:animated];
     [self stopTracingUserLocation];
 }
+
+- (IBAction)statusUpdateButtonAction:(id)sender {
+    
+    StatusUpdateViewController *statusUpdateViewController = [[StatusUpdateViewController alloc] init];
+    [self.navigationController pushViewController:statusUpdateViewController animated:YES];
+    
+}
+- (IBAction)recordMeButtonAction:(id)sender {
+    
+    UIAlertController * disabledContactsAlert = [UIAlertController alertControllerWithTitle:@"Thank you"
+                message:@"Your location/route will be anonymous recorded"
+                preferredStyle:UIAlertControllerStyleAlert];
+
+
+    [disabledContactsAlert addAction:[UIAlertAction actionWithTitle:@"OK"
+                                                              style:UIAlertActionStyleDefault
+                                                            handler:nil]];
+    [self presentViewController:disabledContactsAlert animated:YES completion:nil];
+    
+}
+
 
 #pragma mark -
 
@@ -177,7 +199,7 @@
     }
     
     [self.mapView addAnnotation:annotation];
-    MKCoordinateSpan span = MKCoordinateSpanMake(0.05, 0.05);
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.0005, 0.0005);
     MKCoordinateRegion region = MKCoordinateRegionMake([placemark coordinate], span);
     [self.mapView setRegion:region];
     [self.mapView setSelectedAnnotations:@[annotation]];
