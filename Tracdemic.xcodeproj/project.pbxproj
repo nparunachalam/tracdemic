@@ -21,6 +21,7 @@
 		EC7698E6243165D900EDA974 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698E1243165D900EDA974 /* MMDrawerVisualState.m */; };
 		EC7698E92431745500EDA974 /* MyProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698E82431745500EDA974 /* MyProfileTableViewController.m */; };
 		EC7698EC2431749A00EDA974 /* RecordMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698EB2431749A00EDA974 /* RecordMeViewController.m */; };
+		EC7698EF243191E600EDA974 /* LocationSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7698EE243191E600EDA974 /* LocationSearchTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		EC7698E82431745500EDA974 /* MyProfileTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProfileTableViewController.m; sourceTree = "<group>"; };
 		EC7698EA2431749A00EDA974 /* RecordMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordMeViewController.h; sourceTree = "<group>"; };
 		EC7698EB2431749A00EDA974 /* RecordMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordMeViewController.m; sourceTree = "<group>"; };
+		EC7698ED243191E600EDA974 /* LocationSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationSearchTableViewController.h; sourceTree = "<group>"; };
+		EC7698EE243191E600EDA974 /* LocationSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationSearchTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				EC7698E82431745500EDA974 /* MyProfileTableViewController.m */,
 				EC7698EA2431749A00EDA974 /* RecordMeViewController.h */,
 				EC7698EB2431749A00EDA974 /* RecordMeViewController.m */,
+				EC7698ED243191E600EDA974 /* LocationSearchTableViewController.h */,
+				EC7698EE243191E600EDA974 /* LocationSearchTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				EC7698E6243165D900EDA974 /* MMDrawerVisualState.m in Sources */,
 				EC7698E4243165D900EDA974 /* UIViewController+MMDrawerController.m in Sources */,
 				EC76989F24315A3100EDA974 /* main.m in Sources */,
+				EC7698EF243191E600EDA974 /* LocationSearchTableViewController.m in Sources */,
 				EC7698EC2431749A00EDA974 /* RecordMeViewController.m in Sources */,
 				EC7698CC24315C4800EDA974 /* HomeViewController.m in Sources */,
 				EC7698E92431745500EDA974 /* MyProfileTableViewController.m in Sources */,
@@ -488,12 +494,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W4548RW92;
 				INFOPLIST_FILE = Tracdemic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.Tracdemic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oruvan.Tracdemic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -504,12 +511,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W4548RW92;
 				INFOPLIST_FILE = Tracdemic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.Tracdemic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oruvan.Tracdemic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
